@@ -1,0 +1,1 @@
+Courses Home page test
