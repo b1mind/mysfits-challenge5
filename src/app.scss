@@ -1,9 +1,37 @@
 @use './lib/scss/vars' as *;
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;700&family=IBM+Plex+Serif:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Poppins:wght@300;400;500;700&display=swap');
 
-//TODO bring in design specs
+//TODO font sizes
+/*
+### Font sizes:
+
+If multiple font-sizes are listed, it is for the different screen sizes, from smallest to biggest. If only one is listed, it is the same at all sizes.
+
+- title: 54px / 80px / 80px
+- navigation: 13px
+- paragraph text (not in cards): 17px
+
+#### Buttons
+
+- Small: 13px
+- Large: 20px
+
+#### Cards
+
+- Difficulty tag: 12px
+- Title: 34px
+- Author: 12px
+- Description: 16px
+- Price: 20px
+
+#### Other elements
+
+- Knitting community section title: 34px
+- Become an instructor section title: 54px
+*/
+
 :root {
-  --ff-sans: 'IBM Plex Sans', sans-serif;
+  --ff-sans: 'Poppins', sans-serif;
   --ff-serif: 'IBM Plex Serif', serif;
 
   --fs-200: 0.75rem;
@@ -13,20 +41,19 @@
   --fs-600: 2rem;
   --fs-900: 3.5rem;
 
-  --fw-200: 200;
   --fw-300: 300;
   --fw-400: 400;
+  --fw-500: 500;
   --fw-700: 700;
 
   --clr-neutral-100: #fff;
-  --clr-neutral-200: #eef1f6;
-  --clr-neutral-300: #a9afbc;
+  --clr-neutral-200: #f5f7fa;
   --clr-neutral-400: #737b8c;
   --clr-neutral-500: #434956;
   --clr-neutral-900: #020203;
 
-  --clr-primary-300: #f3f7ff;
-  --clr-primary-400: #8ea8da;
+  --clr-primary-400: #0469dc;
+  --clr-secondary-400: #5858da;
 
   --br: 1rem;
 }
@@ -75,6 +102,7 @@ img {
 
 p {
   margin: 0;
+  font-family: var(--ff-serif);
   line-height: 1.3;
 }
 

@@ -10,8 +10,6 @@
   <slot />
 </main>
 
-<Footer />
-
 <style lang="scss">
   @use '../lib/scss/vars' as *;
 

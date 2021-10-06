@@ -1,12 +1,16 @@
 <script>
+  import Nav from '$lib/Nav.svelte'
   import { page } from '$app/stores'
+
   $: isHome = $page.path === '/'
 </script>
 
 <header class="container" class:isHome>
   <div class="nav-top flex">
     <div class="logo">
-      <img src="/img/logo-large.svg" alt="KnittingPro Logo" />
+      <a href="/">
+        <img src="/img/logo-large.svg" alt="KnittingPro Logo" />
+      </a>
     </div>
 
     <div class="search pill flex">
@@ -28,17 +32,7 @@
     </div>
     <h1>Become a knitting pro</h1>
   {/if}
-
-  <nav class="flex">
-    <ul class="nav-main">
-      <li><a href="#void">All courses</a></li>
-      <li><a href="#void">Beginner</a></li>
-      <li><a href="#void">Intermediate</a></li>
-      <li><a href="#void">Expert</a></li>
-      <li><a href="#void">Grandmother</a></li>
-    </ul>
-    <a href="#void">Subscribe</a>
-  </nav>
+  <Nav />
 </header>
 
 <style lang="scss">
@@ -49,7 +43,7 @@
     display: grid;
     align-content: center;
     @media (max-width: $mediaLrg) {
-      grid-template-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto auto;
     }
   }
 
@@ -99,17 +93,5 @@
     background-size: cover;
     border-radius: var(--br);
     overflow: hidden;
-  }
-
-  nav.flex {
-    overflow-x: scroll;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-
-  .nav-main {
-    display: flex;
-    gap: 0.5em;
   }
 </style>

@@ -1,21 +1,23 @@
 Todo:
-  ☐ bring in design specs to custom props
+  ☐ make header and font-size defaults
   ☐ rethink header/footer/_layout base structure
   ☐ make new CSS utils
   ☐ make new svg sprite as a component
-  ☐ update main nav
-  ☐ move footer to courses
+  ☐ finish main-nav styles
   ☐ start working on cards
   ☐ make a json for faux data
-  ✔ start course page/slug page @done(21-10-05 22:35)
   
 Decide:
-  ✔ Courses route /subfolder/_layout? *yes @done(21-10-05 22:25)
-  ☐ abstract nav-main to component?
   ☐ host on netlify?
   ☐ make a static for github pages?
 
 Archive:
+  ✔ bring in design specs to custom props @done(21-10-06 00:42) @project(Todo)
+  ✔ move footer to courses @done(21-10-06 00:41) @project(Todo)
+  ✔ update/style main nav @done(21-10-06 00:41) @project(Todo)
+  ✔ abstract nav-main to component? @done(21-10-06 00:41) @project(Decide)
+  ✔ start course page/slug page @done(21-10-05 22:35) @project(Todo)
+  ✔ Courses route /subfolder/_layout? *yes @done(21-10-05 22:25) @project(Decide)
   ✔ clean template @done(21-10-05 19:34) @project(Todo)
   ✔ start header component @done(21-10-05 19:34) @project(Todo)
   ✔ start footer component @done(21-10-05 19:34) @project(Todo)
