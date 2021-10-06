@@ -17,7 +17,7 @@
 
   main {
     width: 100%;
-    max-width: $mediaLg;
+    max-width: $mediaLrg;
     margin: 0 auto;
   }
 </style>

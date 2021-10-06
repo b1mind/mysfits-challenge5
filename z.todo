@@ -1,9 +1,13 @@
 Todo:
-  ☐ clean template
-  ☐ start header component
   ☐ make new CSS utils
-  ☐ update assets
+  ☐ make new svg sprite as a component
   
 Decide:
   ☐ host on netlify?
   ☐ make a static for github pages?
+
+Archive:
+  ✔ clean template @done(21-10-05 19:34) @project(Todo)
+  ✔ start header component @done(21-10-05 19:34) @project(Todo)
+  ✔ start footer component @done(21-10-05 19:34) @project(Todo)
+  ✔ update assets @done(21-10-05 19:34) @project(Todo)

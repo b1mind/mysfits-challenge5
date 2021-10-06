@@ -1,6 +1,7 @@
 @use './lib/scss/vars' as *;
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;700&family=IBM+Plex+Serif:wght@300;400;500;700&display=swap');
 
+//TODO bring in design specs
 :root {
   --ff-sans: 'IBM Plex Sans', sans-serif;
   --ff-serif: 'IBM Plex Serif', serif;
@@ -95,7 +96,7 @@ p {
 }
 
 .container {
-  max-width: 77ch;
+  max-width: $mediaLrg;
   margin: 0 auto;
 }
 
@@ -109,6 +110,13 @@ p {
 
 .space-lg {
   margin-top: 3em;
+}
+
+.pill {
+  padding: 0.5em 1.25em;
+  background-color: var(--clr-bg, var(--clr-primary-400));
+  border: none;
+  border-radius: var(--br, 1em);
 }
 
 /* styles */
