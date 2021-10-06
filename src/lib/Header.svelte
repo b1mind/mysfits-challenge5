@@ -25,8 +25,8 @@
   {#if isHome}
     <div class="hero">
       <div class="img" />
-      <h1>Become a knitting pro</h1>
     </div>
+    <h1>Become a knitting pro</h1>
   {/if}
 
   <nav class="flex">
@@ -48,6 +48,9 @@
     min-height: 100vh;
     display: grid;
     align-content: center;
+    @media (max-width: $mediaLrg) {
+      grid-template-rows: auto 1fr auto;
+    }
   }
 
   .nav-top {
@@ -56,19 +59,26 @@
 
   .logo {
     @media (max-width: $mediaLrg) {
-      flex-grow: 1;
+      flex-grow: 2;
     }
   }
 
   .search {
     --clr-bg: var(--clr-neutral-200);
     max-width: 420px;
-    flex-grow: 2;
+    flex-grow: 1;
+    @media (max-width: $mediaSml) {
+      --clr-bg: transparent;
+      flex-grow: 0;
+    }
   }
 
   label,
   input {
     width: 100%;
+    @media (max-width: $mediaSml) {
+      display: none;
+    }
   }
 
   input {
@@ -76,7 +86,14 @@
     background-color: transparent;
   }
 
+  .nav-user a {
+    @media (max-width: $mediaSml) {
+      display: none;
+    }
+  }
+
   .img {
+    height: 100%;
     min-height: 500px;
     background: url('/img/yarn.png') no-repeat center;
     background-size: cover;
@@ -84,12 +101,15 @@
     overflow: hidden;
   }
 
+  nav.flex {
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
   .nav-main {
     display: flex;
     gap: 0.5em;
-
-    li {
-      padding: 0.5em;
-    }
   }
 </style>
