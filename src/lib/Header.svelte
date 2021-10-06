@@ -21,7 +21,7 @@
     </div>
 
     <nav class="nav-user">
-      <a href="#void">Sign In</a>
+      <button class="sign-in">Sign In</button>
       <button class="pill">Get Started</button>
     </nav>
   </div>
@@ -32,6 +32,7 @@
     </div>
     <h1>Become a knitting pro</h1>
   {/if}
+
   <Nav />
 </header>
 
@@ -80,7 +81,7 @@
     background-color: transparent;
   }
 
-  .nav-user a {
+  .sign-in {
     @media (max-width: $mediaSml) {
       display: none;
     }
@@ -88,10 +89,13 @@
 
   .img {
     height: 100%;
-    min-height: 500px;
+    min-height: 420px;
     background: url('/img/yarn.png') no-repeat center;
     background-size: cover;
-    border-radius: var(--br);
+    border-radius: 2.25rem;
     overflow: hidden;
+    @media (max-width: $mediaSml) {
+      min-height: 300px;
+    }
   }
 </style>
