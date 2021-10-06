@@ -16,10 +16,10 @@
       <img src="/img/search.svg" alt="search icon" />
     </div>
 
-    <div class="user">
+    <nav class="nav-user">
       <a href="#void">Sign In</a>
       <button class="pill">Get Started</button>
-    </div>
+    </nav>
   </div>
 
   {#if isHome}
@@ -29,8 +29,8 @@
     </div>
   {/if}
 
-  <nav>
-    <ul>
+  <nav class="flex">
+    <ul class="nav-main">
       <li><a href="#void">All courses</a></li>
       <li><a href="#void">Beginner</a></li>
       <li><a href="#void">Intermediate</a></li>
@@ -42,6 +42,8 @@
 </header>
 
 <style lang="scss">
+  @use '../lib/scss/vars' as *;
+
   .isHome {
     min-height: 100vh;
     display: grid;
@@ -52,9 +54,21 @@
     padding: 1em 0;
   }
 
+  .logo {
+    @media (max-width: $mediaLrg) {
+      flex-grow: 1;
+    }
+  }
+
   .search {
     --clr-bg: var(--clr-neutral-200);
-    min-width: 420px;
+    max-width: 420px;
+    flex-grow: 2;
+  }
+
+  label,
+  input {
+    width: 100%;
   }
 
   input {
@@ -68,5 +82,14 @@
     background-size: cover;
     border-radius: var(--br);
     overflow: hidden;
+  }
+
+  .nav-main {
+    display: flex;
+    gap: 0.5em;
+
+    li {
+      padding: 0.5em;
+    }
   }
 </style>
