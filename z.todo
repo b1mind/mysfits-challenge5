@@ -1,8 +1,11 @@
 Todo:
+  ☐ bring in design specs to custom props
+  ☐ rethink header/footer/_layout base structure
   ☐ make new CSS utils
   ☐ make new svg sprite as a component
   
 Decide:
+  ☐ Courses route /subfolder/_layout?
   ☐ host on netlify?
   ☐ make a static for github pages?
 
