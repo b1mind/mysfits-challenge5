@@ -114,9 +114,15 @@ p {
 
 .pill {
   padding: 0.5em 1.25em;
+  color: var(--clr, var(--clr-neutral-100));
   background-color: var(--clr-bg, var(--clr-primary-400));
   border: none;
   border-radius: var(--br, 1em);
 }
 
 /* styles */
+
+a {
+  color: var(--clr-primary-400);
+  text-decoration: none;
+}

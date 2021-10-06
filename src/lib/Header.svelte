@@ -1,17 +1,19 @@
 <script>
   import { page } from '$app/stores'
+  $: isHome = $page.path === '/'
 </script>
 
-<header class="container">
+<header class="container" class:isHome>
   <div class="nav-top flex">
     <div class="logo">
       <img src="/img/logo-large.svg" alt="KnittingPro Logo" />
     </div>
 
-    <div class="search">
+    <div class="search pill flex">
       <label for="search">
         <input type="text" placeholder="What do you want to learn?" />
       </label>
+      <img src="/img/search.svg" alt="search icon" />
     </div>
 
     <div class="user">
@@ -20,11 +22,9 @@
     </div>
   </div>
 
-  {#if $page.path === '/'}
+  {#if isHome}
     <div class="hero">
-      <div class="img">
-        <img src="/img/yarn.png" alt="Yarn for nitting" />
-      </div>
+      <div class="img" />
       <h1>Become a knitting pro</h1>
     </div>
   {/if}
@@ -42,4 +42,31 @@
 </header>
 
 <style lang="scss">
+  .isHome {
+    min-height: 100vh;
+    display: grid;
+    align-content: center;
+  }
+
+  .nav-top {
+    padding: 1em 0;
+  }
+
+  .search {
+    --clr-bg: var(--clr-neutral-200);
+    min-width: 420px;
+  }
+
+  input {
+    border: none;
+    background-color: transparent;
+  }
+
+  .img {
+    min-height: 500px;
+    background: url('/img/yarn.png') no-repeat center;
+    background-size: cover;
+    border-radius: var(--br);
+    overflow: hidden;
+  }
 </style>

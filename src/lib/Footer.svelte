@@ -43,8 +43,9 @@
       </nav>
     </section>
 
-    <section class="footer-text flex">
-      <p>Copyright stuffs 2021</p>
+    <section class="footer-text">
+      <span>Copyright stuffs 2021</span>
+      <span>Challenge Author: b1mind</span>
     </section>
   </div>
 </footer>
