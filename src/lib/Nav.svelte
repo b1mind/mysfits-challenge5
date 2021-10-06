@@ -29,6 +29,7 @@
   @use './scss/vars' as *;
 
   .scroll {
+    padding: 1rem 0;
     overflow-x: scroll;
     &::-webkit-scrollbar {
       display: none;
@@ -36,27 +37,41 @@
   }
 
   nav {
-    padding: 1em 0;
+    padding: 0 0 1em 0;
     border-bottom: 4px solid var(--clr-neutral-200);
   }
 
-  ul.nav-main {
-    display: flex;
-    gap: 0.5em;
+  nav a {
+    color: var(--clr-neutral-900);
+    font-size: var(--fs-200);
+    text-decoration: none;
+    &:hover,
+    :focus {
+      color: var(--clr-primary-400);
+    }
+  }
 
-    .active {
-      position: relative;
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: -20px;
-        right: 0;
-        width: 100%;
-        height: 4px;
-        background-color: var(--clr-neutral-900);
-        border-radius: 2px;
-        z-index: 1;
-      }
+  ul.nav-main {
+    margin-right: 1em;
+    display: flex;
+    gap: 1em;
+    li {
+      min-width: max-content;
+    }
+  }
+
+  .active {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      right: 0;
+      width: 100%;
+      height: 4px;
+      background-color: var(--clr-neutral-900);
+      border-radius: 2px;
+      z-index: 1;
     }
   }
 </style>
