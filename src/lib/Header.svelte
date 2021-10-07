@@ -3,10 +3,11 @@
   import { page } from '$app/stores'
 
   $: isHome = $page.path === '/'
+  $: isCourse = !isHome
 </script>
 
 <header class="container" class:isHome>
-  <div class="nav-top flex">
+  <div class="nav-top flex" class:isCourse>
     <div class="logo">
       <a href="/">
         <img src="/img/logo-large.svg" alt="KnittingPro Logo" />
@@ -39,6 +40,11 @@
 <style lang="scss">
   @use '../lib/scss/vars' as *;
 
+  .nav-top {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
   .isHome {
     min-height: 100vh;
     display: grid;
@@ -48,8 +54,8 @@
     }
   }
 
-  .nav-top {
-    padding: 1em 0;
+  .isCourse {
+    box-shadow: 0 30px 50px var(--clr-neutral-200);
   }
 
   .logo {
@@ -93,6 +99,7 @@
     background: url('/img/yarn.png') no-repeat center;
     background-size: cover;
     border-radius: 2.25rem;
+    box-shadow: var(--bs);
     overflow: hidden;
     @media (max-width: $mediaSml) {
       min-height: 300px;

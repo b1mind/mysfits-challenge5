@@ -29,7 +29,8 @@
   @use './scss/vars' as *;
 
   .scroll {
-    padding: 1rem 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
     overflow-x: scroll;
     &::-webkit-scrollbar {
       display: none;
@@ -37,6 +38,7 @@
   }
 
   nav {
+    min-width: 100%;
     padding: 0 0 1em 0;
     border-bottom: 4px solid var(--clr-neutral-200);
   }
