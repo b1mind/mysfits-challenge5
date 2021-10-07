@@ -43,16 +43,6 @@
     border-bottom: 4px solid var(--clr-neutral-200);
   }
 
-  nav a {
-    color: var(--clr-neutral-900);
-    font-size: var(--fs-200);
-    text-decoration: none;
-    &:hover,
-    :focus {
-      color: var(--clr-primary-400);
-    }
-  }
-
   ul.nav-main {
     margin-right: 1em;
     display: flex;
