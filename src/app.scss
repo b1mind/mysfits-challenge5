@@ -57,7 +57,7 @@ If multiple font-sizes are listed, it is for the different screen sizes, from sm
   --clr-primary-400: #0469dc;
   --clr-secondary-400: #5858da;
 
-  --br: 1rem;
+  --br: 1.5em;
   --bs: 0px 40px 70px var(--clr-neutral-500), 0 15px 20px var(--clr-neutral-400);
 }
 
@@ -168,10 +168,11 @@ p {
   font-size: var(--fs, var(--fs-200));
   background-color: var(--clr-bg, var(--clr-primary-400));
   border: none;
-  border-radius: var(--br, 1em);
-  --lrg {
-    --fs: var(--fs-600);
-  }
+  border-radius: var(--br, 1.5em);
+}
+
+.lrg {
+  --fs: var(--fs-500);
 }
 
 h1 {
