@@ -58,6 +58,7 @@ If multiple font-sizes are listed, it is for the different screen sizes, from sm
   --clr-secondary-400: #5858da;
 
   --br: 1rem;
+  --bs: 0px 40px 70px var(--clr-neutral-500), 0 15px 20px var(--clr-neutral-400);
 }
 
 @media (max-width: $mediaMed) {
@@ -140,6 +141,10 @@ p {
 .container {
   max-width: $mediaLrg;
   margin: 0 auto;
+  & > * {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 .wrap {
