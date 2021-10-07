@@ -1,16 +1,34 @@
 <script>
   import Nav from '$lib/Nav.svelte'
   import { page } from '$app/stores'
+  import { onMount } from 'svelte'
 
   $: isHome = $page.path === '/'
   $: isCourse = !isHome
+  let mediaSml = true
+
+  function mediaQueryHandler(e) {
+    mediaSml = e.matches
+  }
+
+  onMount(() => {
+    const mediaListener = window.matchMedia('(max-width: 38.75em)')
+    mediaSml = mediaListener.matches
+    mediaListener.addEventListener('change', mediaQueryHandler)
+  })
 </script>
 
 <header class="container" class:isHome>
   <div class="nav-top flex" class:isCourse>
     <div class="logo">
       <a href="/">
-        <img src="/img/logo-large.svg" alt="KnittingPro Logo" />
+        {#if mediaSml}
+          <img src="/img/logo-small.svg" alt="KnittingPro Logo" />
+        {/if}
+
+        {#if !mediaSml}
+          <img src="/img/logo-large.svg" alt="KnittingPro Logo" />
+        {/if}
       </a>
     </div>
 
@@ -59,6 +77,7 @@
   }
 
   .logo {
+    max-height: 21px;
     @media (max-width: $mediaLrg) {
       flex-grow: 2;
     }
