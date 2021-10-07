@@ -130,8 +130,12 @@ h3 {
   max-width: $mediaLrg;
   margin: 0 auto;
   & > * {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    @media (max-width: $mediaLrg) {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
   }
 }
 
@@ -189,6 +193,16 @@ h1,
 
 .title-med {
   font-size: var(--fs-700);
+}
+
+nav a {
+  color: var(--clr, var(--clr-neutral-900));
+  font-size: var(--fs-200);
+  text-decoration: none;
+  &:hover,
+  :focus {
+    color: var(--clr-primary-400);
+  }
 }
 
 button {
