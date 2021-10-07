@@ -45,7 +45,7 @@
       </nav>
     </section>
 
-    <section class="footer-text">
+    <section class="footer-text flex">
       <span>Copyright stuffs 2021</span>
       <span>Challenge Author: b1mind</span>
     </section>
@@ -81,6 +81,8 @@
   .footer-text {
     padding-top: 1em;
     padding-bottom: 1em;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     background-color: var(--clr-neutral-200);
   }
 </style>
