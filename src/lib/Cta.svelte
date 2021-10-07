@@ -1,14 +1,19 @@
 <script>
-  export let reverse
+  export let alt
+  export let img = 'profile-pic.png'
 </script>
 
 <section>
-  <div class="flex" class:reverse>
+  <div class="flex" class:alt>
     <div class="text">
-      <slot name="text" />
+      <slot />
+      <button class="pill lrg">Get Started</button>
+      {#if !alt}
+        <button class="lrg">Learn More</button>
+      {/if}
     </div>
     <div class="img">
-      <slot name="img" />
+      <img src="/img/{img}" alt={img} />
     </div>
   </div>
 </section>
@@ -32,8 +37,12 @@
   }
 
   //todo alt cta
-  .reverse {
+  .alt {
+    min-height: 900px;
     flex-wrap: wrap-reverse;
     flex-direction: row-reverse;
+    .img {
+      transform: scale(2.5);
+    }
   }
 </style>
