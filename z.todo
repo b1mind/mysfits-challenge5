@@ -1,17 +1,19 @@
 Todo:
-  ☐ make header and font-size defaults
   ☐ rethink header/footer/_layout base structure
   ☐ make new CSS utils
   ☐ make new svg sprite as a component
-  ☐ finish main-nav styles
-  ☐ start working on cards
+  ☐ CTA for course page
   ☐ make a json for faux data
+  ☐ start working on cards
   
 Decide:
+  ☐ CTA as slot component?
   ☐ host on netlify?
   ☐ make a static for github pages?
 
 Archive:
+  ✔ make header and font-size defaults @done(21-10-06 17:45) @project(Todo)
+  ✔ finish main-nav styles @done(21-10-06 17:45) @project(Todo)
   ✔ bring in design specs to custom props @done(21-10-06 00:42) @project(Todo)
   ✔ move footer to courses @done(21-10-06 00:41) @project(Todo)
   ✔ update/style main nav @done(21-10-06 00:41) @project(Todo)
