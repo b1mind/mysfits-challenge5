@@ -22,16 +22,15 @@
   @use './scss/vars' as *;
 
   section {
-    margin-bottom: 5rem;
     padding: 5rem 0;
     background-color: var(--bg, var(--clr-neutral-200));
   }
 
   .flex {
     flex-wrap: wrap-reverse;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
   }
 
   .text {
@@ -56,6 +55,7 @@
     --bg: transparent;
 
     .flex {
+      justify-content: space-around;
       flex-direction: row-reverse;
     }
 
@@ -66,7 +66,7 @@
     @media (min-width: $mediaMed) {
       .img {
         min-width: 45%;
-        min-height: 550px;
+        min-height: 600px;
       }
     }
   }
