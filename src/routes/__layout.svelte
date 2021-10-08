@@ -14,8 +14,13 @@
   @use '../lib/scss/vars' as *;
 
   main {
+    --spacer: 5rem;
     width: 100%;
     max-width: $mediaLrg;
     margin: 0 auto;
+
+    @media (max-width: $mediaSml) {
+      --spacer: 1em;
+    }
   }
 </style>
