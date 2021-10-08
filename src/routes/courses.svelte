@@ -3,8 +3,6 @@
   import Cta from '$lib/Cta.svelte'
   import Footer from '$lib/Footer.svelte'
   import { courses } from '$lib/data/posts.js'
-
-  console.log(courses)
 </script>
 
 <section class="container">

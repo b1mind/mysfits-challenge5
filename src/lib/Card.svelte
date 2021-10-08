@@ -20,6 +20,7 @@
 <article class="card">
   <header class="flex">
     <div class="pill" data-level={level}>{level}</div>
+
     <div class="rating">
       {rating}
       <Rating {stars} {half} />
@@ -29,7 +30,10 @@
   <div class="content space">
     <h2>{title}</h2>
     <div class="author">{author}</div>
-    <p>{summary}</p>
+
+    {#if summary && summary.length <= 100}
+      <p>{summary}</p>
+    {/if}
   </div>
 
   <footer class="flex">
@@ -37,10 +41,12 @@
       <div class:sale>
         ${price}
       </div>
+
       {#if sale}
         <div>${sale}</div>
       {/if}
     </div>
+
     <button class="pill lrg">Enroll</button>
   </footer>
 </article>
