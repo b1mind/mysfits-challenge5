@@ -28,3 +28,13 @@
 </section>
 
 <Footer />
+
+<style lang="scss">
+  @use '../../lib/scss/vars' as *;
+
+  h1 {
+    @media (max-width: $mediaSml) {
+      --fs: clamp(2rem, 10vw, 3.85rem);
+    }
+  }
+</style>
