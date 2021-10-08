@@ -6,14 +6,25 @@
 </script>
 
 <script>
+  import Card from '$lib/Card.svelte'
   import Footer from '$lib/Footer.svelte'
+  import { courses } from '$lib/data/posts.js'
   export let slugTitle
+
+  $: coursesFilter = courses.filter((key) => key.level === slugTitle)
 </script>
 
 <section class="container">
-  <!-- //Todo filter with slug -->
   <h1>{slugTitle}</h1>
-  <p>This would be a course category</p>
+  <div class="grid">
+    {#each coursesFilter as { ...course }}
+      <Card {...course} />
+    {/each}
+  </div>
+
+  {#if coursesFilter.length === 0}
+    <p>There are no {slugTitle} courses open right now.</p>
+  {/if}
 </section>
 
 <Footer />
