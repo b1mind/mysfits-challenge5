@@ -20,10 +20,12 @@
   ]
 </script>
 
-<footer>
-  <div class="container">
-    <section class="footer-nav flex wrap">
-      <img src="/img/logo-large.svg" alt="KnittingPro Logo" />
+<footer class="container">
+  <div>
+    <div class="footer-nav flex wrap">
+      <a href="/">
+        <img src="/img/logo-large.svg" alt="KnittingPro Logo" />
+      </a>
 
       <nav class="links">
         <ul class="flex">
@@ -43,12 +45,12 @@
           {/each}
         </ul>
       </nav>
-    </section>
+    </div>
+  </div>
 
-    <section class="footer-text flex">
-      <span>Copyright stuffs 2021</span>
-      <span>Challenge Author: b1mind</span>
-    </section>
+  <div class="footer-text flex">
+    <span>Copyright stuffs 2021</span>
+    <span>Challenge Author: b1mind</span>
   </div>
 </footer>
 
@@ -60,6 +62,7 @@
   }
 
   .footer-nav {
+    width: 100%;
     padding-top: 2rem;
     padding-bottom: 2rem;
     border-top: 4px solid var(--clr-neutral-200);
