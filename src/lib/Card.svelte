@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from 'svelte'
   import Rating from '$lib/Rating.svelte'
 
   export let title
@@ -13,11 +14,21 @@
   let half = isInt(rating)
   let deal = ((price - sale) / sale) * 100 >= 80
 
-  console.log(deal)
-
   function isInt(n) {
     return n % 1 === 0
   }
+
+  //todo abstract to external export for import in header too
+  let mediaSml = true
+  function mediaQueryHandler(e) {
+    mediaSml = e.matches
+  }
+
+  onMount(() => {
+    const mediaListener = window.matchMedia('(max-width: 38.75em)')
+    mediaSml = mediaListener.matches
+    mediaListener.addEventListener('change', mediaQueryHandler)
+  })
 </script>
 
 <article class="card">
@@ -26,7 +37,7 @@
 
     <div class="rating">
       {rating}
-      <Rating {stars} {half} />
+      <Rating {mediaSml} {stars} {half} />
     </div>
   </header>
 
