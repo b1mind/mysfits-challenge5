@@ -11,6 +11,9 @@
 
   let stars = ~~rating
   let half = isInt(rating)
+  let deal = ((price - sale) / sale) * 100 >= 80
+
+  console.log(deal)
 
   function isInt(n) {
     return n % 1 === 0
@@ -38,7 +41,7 @@
 
   <footer class="flex">
     <div class="price">
-      <div class:sale>
+      <div class:sale class:deal>
         ${price}
       </div>
 
@@ -98,15 +101,19 @@
   }
 
   .sale {
-    color: var(--clr-primary-400);
+    color: var(--clr, var(--clr-neutral-500));
     font-size: var(--fs-200);
     text-decoration: line-through;
 
     &::after {
       content: 'SALE';
       position: absolute;
-      right: -1em;
+      transform: translateX(0.25em);
     }
+  }
+
+  .deal {
+    --clr: var(--clr-primary-400);
   }
 
   [data-level='intermediate'] {
