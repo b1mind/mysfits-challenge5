@@ -20,7 +20,7 @@
     margin: 0 auto;
 
     @media (max-width: $mediaSml) {
-      --spacer: 1em;
+      --spacer: 2em;
     }
   }
 </style>

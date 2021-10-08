@@ -30,7 +30,7 @@
 
   .scroll {
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     overflow-x: scroll;
     &::-webkit-scrollbar {
       display: none;
