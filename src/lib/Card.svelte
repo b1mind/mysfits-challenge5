@@ -1,61 +1,63 @@
 <script>
-  export let title = 'this is a undefined title'
-  export let body =
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur voluptatum quasi praesentium magni ullam amet ut officia laudantium! Enim voluptatum recusandae dolor ea aut modi possimus. Iste praesentium necessitatibus odio'
-  export let id = 1
-  export let img = `blog-${id}.jpg`
-
-  function getSlug(title) {
-    return title.split(' ').join('-')
-  }
+  export let title = 'Default course title'
+  export let author = 'Author name'
+  export let summary =
+    'default summary can be said that there is no content coming into this componet how sad for it ... check your self'
+  export let level = 'beginner'
+  export let rating = 4.4
+  export let sale
+  export let price = '23.99'
 </script>
 
-<article class="space">
-  <!-- //todo find out which way you want to do post images... -->
-  <div class="img">
-    <img src="/img/{img}" alt={title} />
+<article class="card">
+  <header class="flex">
+    <div class="pill">{level}</div>
+    <div class="rating">{rating}</div>
+  </header>
+  <div class="content space">
+    <h2>{title}</h2>
+    <div class="author">{author}</div>
+    <p>{summary}</p>
   </div>
-  <h3>
-    <a href="/blog/{getSlug(title)}?id={id}">{title.substring(0, 40)}</a>
-  </h3>
-  <p>{body.substring(0, 80)}...</p>
-
   <footer class="flex">
-    <time class="title-sml" datetime="2021-10-08">Oct 8</time>
-    <time class="title-sml" datetime="PT08M">8 min <span>read</span></time>
+    <div class="price" class:sale>
+      ${price}
+    </div>
+    {#if sale}
+      <div class="price">${sale}</div>
+    {/if}
+    <button class="pill lrg">Enroll</button>
   </footer>
 </article>
 
 <style lang="scss">
-  article {
-    --spacer: 0.75rem;
-    padding: 0.75rem;
-    background-color: var(--clr-bg, var(--clr-neutral-100));
-    border-radius: var(--br);
+  @use './scss/vars' as *;
 
-    &:hover {
-      box-shadow: 0.5px 0.5px 30px rgba(0, 0, 0, 10%);
-      transform: translate(0);
-      z-index: 1;
-      cursor: pointer;
+  .card {
+    min-height: 420px;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 2rem;
+    align-items: center;
+    background-color: var(--clr-neutral-200);
+    border-radius: var(--br);
+    @media (max-width: $mediaSml) {
+      max-width: 350px;
+      place-self: center;
     }
   }
 
-  img {
-    min-height: 175px;
-    object-fit: cover;
+  .content {
+    align-self: end;
+  }
+
+  .author {
+    color: var(--clr-neutral-500);
+    font-size: var(--fs-200);
   }
 
   p {
     font-size: var(--fs-400);
-    line-height: 1.2;
-  }
-
-  footer.flex {
-    justify-content: flex-start;
-
-    & > * + * {
-      margin-left: 2rem;
-    }
   }
 </style>

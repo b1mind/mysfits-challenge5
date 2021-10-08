@@ -1,10 +1,27 @@
 <script>
-  import Footer from '$lib/Footer.svelte'
+  import Card from '$lib/Card.svelte'
   import Cta from '$lib/Cta.svelte'
+  import Footer from '$lib/Footer.svelte'
+  import { courses } from '$lib/data/posts.js'
+
+  console.log(courses)
 </script>
 
 <section class="container">
-  <p>Card place holder</p>
+  <div class="grid">
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+  </div>
 </section>
 
 <Cta img="yarn.png">

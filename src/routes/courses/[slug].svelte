@@ -10,9 +10,10 @@
   export let slugTitle
 </script>
 
-{slugTitle}
+<section class="container">
+  <!-- //Todo filter with slug -->
+  <h1>{slugTitle}</h1>
+  <p>This would be a course category</p>
+</section>
 
-This would be a course category
-<!-- //Todo filter with slug -->
-<p>data.filter(slugTitle)</p>
 <Footer />
