@@ -1,17 +1,33 @@
 Todo:
-  ☐ rethink header/footer/_layout base structure
-  ☐ make new CSS utils
+  ☐ finish setting up deploy (pub branch needed)
+  ☐ finish setting up vercel
+
+Fix:
+  ☐ star/rating alignment
+  ☐ responsive card header/titles
+  ☐ page titles need responsiveness 
+
+Wishlist:
+  ☐ course level pill buttons?
+  ☐ modal for buttons
+  ☐ convert js object to a json for faux data
   ☐ make new svg sprite as a component
-  ☐ CTA for course page
-  ☐ make a json for faux data
-  ☐ start working on cards
-  
-Decide:
-  ☐ CTA as slot component?
-  ☐ host on netlify?
-  ☐ make a static for github pages?
+  ☐ remake stars for full fill/stroke
 
 Archive:
+  ✔ add stars svg/sprite for cards @done(21-10-08 00:42) @project(Todo)
+  ✔ card styles and logic @done(21-10-08 00:42) @project(Todo)
+  ✔ stars for rating showing all 5 but filling number @done(21-10-08 00:42) @project(Todo)
+  ✔ header logo change on mediaSml @done(21-10-07 19:17) @project(Todo)
+  ✔ start working on cards @done(21-10-07 19:17) @project(Todo)
+  ✔ footer styles polished @done(21-10-07 16:34) @project(Todo)
+  ✔ footer match mockup responsiveness @done(21-10-07 16:34) @project(Todo)
+  ✔ rethink header/footer/_layout base structure? (seems to be good) @done(21-10-07 16:34) @project(Decide)
+  ✘ host on netlify? @cancelled(21-10-07 16:37) @project(Decide)
+  ✘ make a static for github pages? @cancelled(21-10-07 16:37) @project(Decide)
+  ✔ make new CSS utils @done(21-10-07 14:26) @project(Todo)
+  ✔ CTA for course page @done(21-10-07 14:25) @project(Todo)
+  ✔ CTA as slot component? @done(21-10-07 14:25) @project(Decide)
   ✔ make header and font-size defaults @done(21-10-06 17:45) @project(Todo)
   ✔ finish main-nav styles @done(21-10-06 17:45) @project(Todo)
   ✔ bring in design specs to custom props @done(21-10-06 00:42) @project(Todo)
