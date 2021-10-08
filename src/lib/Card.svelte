@@ -19,7 +19,7 @@
 
 <article class="card">
   <header class="flex">
-    <div class="pill">{level}</div>
+    <div class="pill" data-level={level}>{level}</div>
     <div class="rating">
       {rating}
       <Rating {stars} {half} />
@@ -101,5 +101,17 @@
       position: absolute;
       right: -1em;
     }
+  }
+
+  [data-level='intermediate'] {
+    --clr-bg: var(--clr-secondary-400);
+  }
+
+  [data-level='expert'] {
+    --clr-bg: maroon;
+  }
+
+  [data-level='grandmother'] {
+    --clr-bg: plum;
   }
 </style>
