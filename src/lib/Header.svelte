@@ -24,9 +24,7 @@
       <a href="/">
         {#if mediaSml}
           <img src="/img/logo-small.svg" alt="KnittingPro Logo" />
-        {/if}
-
-        {#if !mediaSml}
+        {:else}
           <img src="/img/logo-large.svg" alt="KnittingPro Logo" />
         {/if}
       </a>
