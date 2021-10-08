@@ -1,11 +1,11 @@
 Fix:
-  ☐ star/rating alignment
-  ☐ responsive card header/titles
-  ☐ page titles need responsiveness 
-  ☐ remake stars for half fill/stroke
+  ✔ responsive card header/titles @done(21-10-08 15:01)
+  ✔ page titles need responsiveness @done(21-10-08 14:13)
+  ✔ star/rating alignment @done(21-10-08 11:45)
+  ✔ remake stars for half fill/stroke @done(21-10-08 11:25)
 
 Todo:
-  ☐ price sale style gray if < 25%
+  ✔ price sale style gray if < 25% @done(21-10-08 15:01)
   ☐ finish setting up deploy (pub branch needed)
   ☐ finish setting up vercel
 
@@ -13,10 +13,13 @@ Wishlist:
   ☐ card level pill > links?
   ☐ lighthouse corrections for 100 scores
   ☐ confirm a11y and screen reader compatibility
-  ☐ mediaQuery as state/store?
   ☐ modal for buttons/register
+  ☐ model for subscribe or reuse register
+  ☐ mediaQuery as state/store?
+  ☐ svg stars as mask/fill with full floating value
   ☐ convert js object to a json for faux data
   ☐ make new svg sprite as a component
+  ☐ do something with the search bar?
 
 Archive:
   ✔ add stars svg/sprite for cards @done(21-10-08 00:42) @project(Todo)
