@@ -9,18 +9,9 @@
 
 <section class="container">
   <div class="grid">
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
+    {#each courses as { ...course }}
+      <Card {...course} />
+    {/each}
   </div>
 </section>
 

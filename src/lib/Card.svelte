@@ -1,31 +1,46 @@
 <script>
-  export let title = 'Default course title'
-  export let author = 'Author name'
-  export let summary =
-    'default summary can be said that there is no content coming into this componet how sad for it ... check your self'
-  export let level = 'beginner'
-  export let rating = 4.4
+  import Rating from '$lib/Rating.svelte'
+
+  export let title
+  export let author
+  export let summary
+  export let level
+  export let rating
   export let sale
-  export let price = '23.99'
+  export let price
+
+  let stars = ~~rating
+  let half = isInt(rating)
+
+  function isInt(n) {
+    return n % 1 === 0
+  }
 </script>
 
 <article class="card">
   <header class="flex">
     <div class="pill">{level}</div>
-    <div class="rating">{rating}</div>
+    <div class="rating">
+      {rating}
+      <Rating {stars} {half} />
+    </div>
   </header>
+
   <div class="content space">
     <h2>{title}</h2>
     <div class="author">{author}</div>
     <p>{summary}</p>
   </div>
+
   <footer class="flex">
-    <div class="price" class:sale>
-      ${price}
+    <div class="price">
+      <div class:sale>
+        ${price}
+      </div>
+      {#if sale}
+        <div>${sale}</div>
+      {/if}
     </div>
-    {#if sale}
-      <div class="price">${sale}</div>
-    {/if}
     <button class="pill lrg">Enroll</button>
   </footer>
 </article>
@@ -34,17 +49,27 @@
   @use './scss/vars' as *;
 
   .card {
+    --spacer: 1em;
     min-height: 420px;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     display: grid;
     grid-template-rows: auto 1fr auto;
     gap: 2rem;
     align-items: center;
     background-color: var(--clr-neutral-200);
     border-radius: var(--br);
+
     @media (max-width: $mediaSml) {
       max-width: 350px;
       place-self: center;
+    }
+  }
+
+  button.lrg {
+    --clr-bg: var(--clr-neutral-900);
+    &:hover,
+    &:active {
+      --clr-bg: revert;
     }
   }
 
@@ -59,5 +84,22 @@
 
   p {
     font-size: var(--fs-400);
+  }
+
+  .price {
+    position: relative;
+    font-size: var(--fs-600);
+  }
+
+  .sale {
+    color: var(--clr-primary-400);
+    font-size: var(--fs-200);
+    text-decoration: line-through;
+
+    &::after {
+      content: 'SALE';
+      position: absolute;
+      right: -1em;
+    }
   }
 </style>
