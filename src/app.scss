@@ -32,12 +32,6 @@
   --bs: 0px 40px 70px var(--clr-neutral-500), 0 15px 20px var(--clr-neutral-400);
 }
 
-@media (max-width: $mediaMed) {
-  :root {
-    --fs-900: 3.375rem;
-  }
-}
-
 /* resets */
 
 *,
@@ -85,7 +79,7 @@ h3 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   place-content: center;
   grid-auto-flow: row;
   gap: 2rem;
@@ -154,8 +148,11 @@ h2,
 
 h1 {
   margin: 0.25em 0;
-  font-size: var(--fs-900);
+  font-size: var(--fs, var(--fs-900));
   font-weight: var(--fw-400);
+  @media (max-width: $mediaMed) {
+    --fs: 3.375rem;
+  }
 }
 
 .title-lrg {
