@@ -35,6 +35,7 @@
   h1 {
     @media (max-width: $mediaSml) {
       --fs: clamp(2rem, 10vw, 3.85rem);
+      text-align: center;
     }
   }
 </style>
