@@ -31,8 +31,8 @@
     <h2>{title}</h2>
     <div class="author">{author}</div>
 
-    {#if summary && summary.length <= 100}
-      <p>{summary}</p>
+    {#if summary && summary.length <= 175}
+      <p>{summary.substring(0, 115)}...</p>
     {/if}
   </div>
 
