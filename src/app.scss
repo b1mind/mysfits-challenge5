@@ -1,35 +1,6 @@
 @use './lib/scss/vars' as *;
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Poppins:wght@300;400;500;700&display=swap');
 
-//TODO font sizes
-/*
-### Font sizes:
-
-If multiple font-sizes are listed, it is for the different screen sizes, from smallest to biggest. If only one is listed, it is the same at all sizes.
-
-- title: 54px / 80px / 80px
-- navigation: 13px
-- paragraph text (not in cards): 17px
-
-#### Buttons
-
-- Small: 13px
-- Large: 20px
-
-#### Cards
-
-- Difficulty tag: 12px
-- Title: 34px
-- Author: 12px
-- Description: 16px
-- Price: 20px
-
-#### Other elements
-
-- Knitting community section title: 34px
-- Become an instructor section title: 54px
-*/
-
 :root {
   --ff-sans: 'Poppins', sans-serif;
   --ff-serif: 'IBM Plex Serif', serif;
@@ -152,7 +123,6 @@ h3 {
 }
 
 /* styles */
-//todo shadow style
 
 .pill {
   padding: 0.5em 1.25em;

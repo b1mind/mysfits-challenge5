@@ -1,18 +1,22 @@
-Todo:
-  ☐ finish setting up deploy (pub branch needed)
-  ☐ finish setting up vercel
-
 Fix:
   ☐ star/rating alignment
   ☐ responsive card header/titles
   ☐ page titles need responsiveness 
+  ☐ remake stars for half fill/stroke
+
+Todo:
+  ☐ price sale style gray if < 25%
+  ☐ finish setting up deploy (pub branch needed)
+  ☐ finish setting up vercel
 
 Wishlist:
-  ☐ course level pill buttons?
-  ☐ modal for buttons
+  ☐ card level pill > links?
+  ☐ lighthouse corrections for 100 scores
+  ☐ confirm a11y and screen reader compatibility
+  ☐ mediaQuery as state/store?
+  ☐ modal for buttons/register
   ☐ convert js object to a json for faux data
   ☐ make new svg sprite as a component
-  ☐ remake stars for full fill/stroke
 
 Archive:
   ✔ add stars svg/sprite for cards @done(21-10-08 00:42) @project(Todo)

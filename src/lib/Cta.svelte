@@ -51,7 +51,6 @@
     }
   }
 
-  //todo alt cta
   .alt {
     --bg: transparent;
 
