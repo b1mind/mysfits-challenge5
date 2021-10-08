@@ -34,6 +34,7 @@
   }
 
   .text {
+    --spacer: 1em;
     max-width: 40ch;
   }
 
