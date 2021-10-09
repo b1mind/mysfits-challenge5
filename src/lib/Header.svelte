@@ -5,6 +5,7 @@
 
   $: isHome = $page.path === '/'
   $: isCourse = !isHome
+
   let mediaSml = true
 
   function mediaQueryHandler(e) {
@@ -23,18 +24,28 @@
     <div class="logo">
       <a href="/">
         {#if mediaSml}
-          <img src="/img/logo-small.svg" alt="KnittingPro Logo" />
+          <img
+            src="/img/logo-small.svg"
+            alt="KnittingPro Logo"
+            width="45px"
+            height="21px"
+          />
         {:else}
-          <img src="/img/logo-large.svg" alt="KnittingPro Logo" />
+          <img
+            src="/img/logo-large.svg"
+            alt="KnittingPro Logo"
+            width="114px"
+            height="21px"
+          />
         {/if}
       </a>
     </div>
 
     <div class="search pill flex">
       <label for="search">
-        <input type="text" placeholder="What do you want to learn?" />
+        <input disabled type="text" placeholder="What do you want to learn?" />
       </label>
-      <img src="/img/search.svg" alt="search icon" />
+      <img src="/img/search.svg" alt="search icon" width="24px" height="24px" />
     </div>
 
     <nav class="nav-user">

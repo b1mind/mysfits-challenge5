@@ -14,7 +14,7 @@
 </section>
 
 <Cta img="yarn.png">
-  <div class="title-med">Welcome to the largest knitting community.</div>
+  <h1 class="title-med">Welcome to the largest knitting community.</h1>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
     reprehenderit quidem quis veritatis repellendus, blanditiis dolor eum quas

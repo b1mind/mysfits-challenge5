@@ -36,7 +36,7 @@
         </ul>
       </nav>
 
-      <nav class="social">
+      <nav class="social" aria-label="social links">
         <ul class="flex">
           {#each icons as icon}
             <li>

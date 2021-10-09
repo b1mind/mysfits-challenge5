@@ -5,7 +5,7 @@
   let icon = `/img/social-icons.svg#${name}`
 </script>
 
-<a href="https://{url}">
+<a href="https://{url} aria-label={name}">
   <svg width="24" height="24">
     <use href={icon} />
   </svg>

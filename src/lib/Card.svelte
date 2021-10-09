@@ -103,6 +103,7 @@
   }
 
   p {
+    color: var(--clr-neutral-500);
     font-size: var(--fs-400);
   }
 
