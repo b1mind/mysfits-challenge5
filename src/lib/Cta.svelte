@@ -1,6 +1,6 @@
 <script>
   export let alt
-  export let img = 'profile-pic.png'
+  export let img = 'profile-pic'
 </script>
 
 <section class="container" class:alt>
@@ -13,7 +13,11 @@
       {/if}
     </div>
     <div class="img">
-      <img src="/img/{img}" alt={img} width="325px" height="325px" />
+      <picture>
+        <source srcset="img/{img}.webp" type="image/webp" />
+        <source srcset="img/{img}.png" type="image/png" />
+        <img src="/img/{img}.png" alt={img} width="325px" height="325px" />
+      </picture>
     </div>
   </div>
 </section>

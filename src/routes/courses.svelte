@@ -13,7 +13,7 @@
   </div>
 </section>
 
-<Cta img="yarn.png">
+<Cta img="yarn">
   <h1 class="title-med">Welcome to the largest knitting community.</h1>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
