@@ -24,7 +24,12 @@
   <div>
     <div class="footer-nav flex wrap">
       <a href="/">
-        <img src="/img/logo-large.svg" alt="KnittingPro Logo" />
+        <img
+          src="/img/logo-large.svg"
+          alt="KnittingPro Logo"
+          width="114px"
+          height="21px"
+        />
       </a>
 
       <nav class="links">

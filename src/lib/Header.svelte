@@ -19,6 +19,15 @@
   })
 </script>
 
+<svelte:head>
+  <meta
+    name="description"
+    content="Knitting Pro courses will have you getting warm in no time!"
+  />
+
+  <title>KnittingPro {$page.params.slug || $page.path}</title>
+</svelte:head>
+
 <header class="container" class:isHome>
   <div class="nav-top flex" class:isCourse>
     <div class="logo">
