@@ -1,27 +1,34 @@
 Fix:
-  ✔ responsive card header/titles @done(21-10-08 15:01)
-  ✔ page titles need responsiveness @done(21-10-08 14:13)
-  ✔ star/rating alignment @done(21-10-08 11:45)
-  ✔ remake stars for half fill/stroke @done(21-10-08 11:25)
-
+  ☐ 728px responsive cta needs tweaked
+  ☐ cumulative layout shift on blog from component styles?
+  ☐ yarn.png still to big convert to png > jpg
+  ☐ a11y announcements for main-nav and cards titles
+  
 Todo:
-  ✔ price sale style gray if < 25% @done(21-10-08 15:01)
-  ☐ finish setting up deploy (pub branch needed)
-  ☐ finish setting up vercel
+  ☐ lighthouse corrections for 100 scores
+  ☐ confirm a11y and screen reader compatibility
+  ✔ Webp images with fall back @done(21-10-08 22:06)
+  ✔ finish setting up deploy (pub branch needed) @done(21-10-08 21:22)
+  ✔ finish setting up vercel @done(21-10-08 21:22)
 
 Wishlist:
   ☐ card level pill > links?
-  ☐ lighthouse corrections for 100 scores
-  ☐ confirm a11y and screen reader compatibility
   ☐ modal for buttons/register
   ☐ model for subscribe or reuse register
   ☐ mediaQuery as state/store?
   ☐ svg stars as mask/fill with full floating value
   ☐ convert js object to a json for faux data
+  ☐ better meta/title implementation for seo practice
+  ☐ get vite-plugin-compress working
   ☐ make new svg sprite as a component
   ☐ do something with the search bar?
 
 Archive:
+  ✔ responsive card header/titles @done(21-10-08 15:01) @project(Fix)
+  ✔ page titles need responsiveness @done(21-10-08 14:13) @project(Fix)
+  ✔ star/rating alignment @done(21-10-08 11:45) @project(Fix)
+  ✔ remake stars for half fill/stroke @done(21-10-08 11:25) @project(Fix)
+  ✔ price sale style gray if < 25% @done(21-10-08 15:01) @project(Todo)
   ✔ add stars svg/sprite for cards @done(21-10-08 00:42) @project(Todo)
   ✔ card styles and logic @done(21-10-08 00:42) @project(Todo)
   ✔ stars for rating showing all 5 but filling number @done(21-10-08 00:42) @project(Todo)
