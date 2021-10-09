@@ -102,11 +102,6 @@
     font-size: var(--fs-200);
   }
 
-  p {
-    color: var(--clr-neutral-500);
-    font-size: var(--fs-400);
-  }
-
   .price {
     position: relative;
     font-size: var(--fs-600);
