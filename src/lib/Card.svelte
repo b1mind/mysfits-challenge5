@@ -69,7 +69,6 @@
   @use './scss/vars' as *;
 
   .card {
-    --spacer: 1em;
     min-height: 420px;
     padding: 1.5rem 1rem;
     display: grid;
