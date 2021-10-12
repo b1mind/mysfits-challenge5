@@ -1,6 +1,6 @@
 {
-  "name": "mysfits-module3-final",
-  "version": "0.0.1",
+  "name": "mysfits-challenge5",
+  "version": "1.1.1",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
