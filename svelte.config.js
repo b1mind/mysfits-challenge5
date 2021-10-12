@@ -7,6 +7,7 @@ export default {
   kit: {
     adapter: vercel(),
     vite: () => ({
+      //todo get img compression working
       plugins: [compress]
     })
   },

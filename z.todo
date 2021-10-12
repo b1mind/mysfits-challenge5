@@ -1,15 +1,11 @@
 Fix:
   ☐ 728px responsive cta needs tweaked
-  ☐ cumulative layout shift on blog from component styles?
   ☐ yarn.png still to big convert to png > jpg
   ☐ a11y announcements for main-nav and cards titles
   
 Todo:
-  ☐ lighthouse corrections for 100 scores
-  ☐ confirm a11y and screen reader compatibility
-  ✔ Webp images with fall back @done(21-10-08 22:06)
-  ✔ finish setting up deploy (pub branch needed) @done(21-10-08 21:22)
-  ✔ finish setting up vercel @done(21-10-08 21:22)
+  ☐ update course data with more stuff
+  ✔ confirm a11y and screen reader compatibility @done(21-10-10 22:14)
 
 Wishlist:
   ☐ card level pill > links?
@@ -23,7 +19,14 @@ Wishlist:
   ☐ make new svg sprite as a component
   ☐ do something with the search bar?
 
+Lighthouse:
+  /* 97 100 100 100 n/a */
+  ☐ cumulative layout shift on blog from component styles?
+
 Archive:
+  ✔ Webp images with fall back @done(21-10-08 22:06) @project(Todo)
+  ✔ finish setting up deploy (pub branch needed) @done(21-10-08 21:22) @project(Todo)
+  ✔ finish setting up vercel @done(21-10-08 21:22) @project(Todo)
   ✔ responsive card header/titles @done(21-10-08 15:01) @project(Fix)
   ✔ page titles need responsiveness @done(21-10-08 14:13) @project(Fix)
   ✔ star/rating alignment @done(21-10-08 11:45) @project(Fix)

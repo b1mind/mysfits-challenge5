@@ -6,6 +6,7 @@ export let courses = [
       'This will be a description about the course and maybe not all will have one',
     level: 'beginner',
     rating: 5,
+    sale: '13.99',
     price: '23.99'
   },
 
@@ -60,9 +61,10 @@ export let courses = [
     price: '23.99'
   },
 
+  //todo update repeats with different data
   {
     title: 'This is a long course title ya baby!',
-    author: 'Kevin Powell',
+    author: 'Kevin Howell',
     summary:
       'This will be a description about the course and maybe not all will have one',
     level: 'beginner',
