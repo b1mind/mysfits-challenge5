@@ -31,24 +31,24 @@
   })
 </script>
 
-<article aria-labelledby="course-title" class="card">
-  <header class="flex">
+<article class="card">
+  <div class="flex">
     <div class="pill" data-level={level}>{level}</div>
 
     <div class="rating">
       {rating}
       <Rating {mediaSml} {stars} {half} />
     </div>
-  </header>
+  </div>
 
-  <div class="content space">
-    <h2 id="course-title">{title}</h2>
+  <header class="content space">
+    <h2>{title}</h2>
     <div class="author">{author}</div>
 
     {#if summary && summary.length <= 175}
       <p>{summary.substring(0, 115)}...</p>
     {/if}
-  </div>
+  </header>
 
   <footer class="flex">
     <div class="price">
