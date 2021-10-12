@@ -31,7 +31,7 @@
   })
 </script>
 
-<article class="card">
+<article aria-labelledby="course-title" class="card">
   <header class="flex">
     <div class="pill" data-level={level}>{level}</div>
 
@@ -42,7 +42,7 @@
   </header>
 
   <div class="content space">
-    <h2>{title}</h2>
+    <h2 id="course-title">{title}</h2>
     <div class="author">{author}</div>
 
     {#if summary && summary.length <= 175}
